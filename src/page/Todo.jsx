@@ -86,7 +86,7 @@ const Todo = () => {
                     {todo?.completed ? "COMPLETED" : "NOT COMPLETE"}
                   </div>
                   <div className=" w-[5%]">
-                    <input type="checkbox" onChange={()=>{handleCompleteTodo(todo?.id)}}/>
+                    <input type="checkbox" onChange={()=>{handleCompleteTodo(todo?.id)}} checked={todo.completed}/>
                   </div>
                   <div
                     className=" text-red-600 w-[5%]"
